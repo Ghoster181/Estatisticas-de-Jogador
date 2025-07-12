@@ -1,6 +1,11 @@
+"""Declaração de variáveis"""
+
 time = list()
 jogador = dict()
 partidas = list()
+
+"""Validação dos dados inseridos pelo usuário"""
+
 while True:
     jogador.clear()
     jogador['Nome'] = str(input('Nome do Jogador: ')).title()
@@ -30,6 +35,9 @@ for k, v in enumerate(time):
         print(f'{str(d):<15}', end='')
     print()
 print('-' * 40)
+
+"""Programa principal"""
+
 while True:
     busca = int(input('Mostrar dados de qual jogador? (999 para parar) '))
     if busca == 999:
